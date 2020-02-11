@@ -35,7 +35,7 @@ module.exports = {
         // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
         fieldName: "wordPress",
         // Url to query from
-        url: "https://gatsby-wordpress.test/graphql",
+        url: "https://inspiring-easley-21343b.netlify.com/",
         refetchInterval: 60
 
       },
