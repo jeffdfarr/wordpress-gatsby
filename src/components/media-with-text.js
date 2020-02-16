@@ -5,17 +5,13 @@ export const fragment = graphql`
   fragment MediaWithTextSection on WordPress_Page_Acfpagesections_PageSection_MediaWithText {
     title
     description
-    media {
-      sourceUrl(size: LARGE)
-    }
   }
 `;
 
-const MediaWithText = ({title, description, media}) => (
+const MediaWithText = ({title, description}) => (
   <section>
     <p>{title}</p>
     {description}
-    <img src={media.sourceUrl} />
   </section>
 );
 
