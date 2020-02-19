@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Image from "./Image"
+import Image from "./FluidImage"
 import { blogURI } from "../../globals"
 
 const PostEntry = ({ post }) => {
