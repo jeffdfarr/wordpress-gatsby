@@ -1,3 +1,19 @@
+// Uncomment below when you're ready to create different environments
+
+
+// let activeEnv =
+//   process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
+
+// console.log(`Using environment config: '${activeEnv}'`)
+
+// require("dotenv").config({
+//   path: `.env.${activeEnv}`,
+// })
+
+// console.log(`This WordPress Endpoint is used: '${process.env.WORDPRESS_URL}'`)
+
+
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -5,6 +21,7 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,9 +48,9 @@ module.exports = {
       resolve: "gatsby-source-graphql",
       options: {
         // Arbitrary name for the remote schema Query type
-        typeName: "WordPress",
+        typeName: "WPGraphQL",
         // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
-        fieldName: "wordPress",
+        fieldName: "wpgraphql",
         // Url to query from
         url: "https://dev-wordpress-gatsby.pantheonsite.io/graphql",
         refetchInterval: 60

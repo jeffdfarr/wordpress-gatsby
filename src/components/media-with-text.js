@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 export const fragment = graphql`
-  fragment MediaWithTextSection on WordPress_Page_Acfpagesections_PageSection_MediaWithText {
+  fragment MediaWithTextSection on WPGraphQL_Page_Acfpagesections_PageSection_MediaWithText {
     title
     description
   }
